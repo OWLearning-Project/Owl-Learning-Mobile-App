@@ -40,7 +40,7 @@
       android:textColor="@color/violet_owlearning"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/logo_app" />
+    app:layout_constraintTop_toBottomOf="@+id/fond_entete" />
 
   <EditText
       android:id="@+id/edit_email"
