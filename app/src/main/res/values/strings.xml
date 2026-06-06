@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Owl Learning</string>
+    <string name="bienvenue_sur_owlearning">Bienvenue sur OWLearning !</string>
+    <string name="email">Email</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="logo_owlearning">Logo OWLearning</string>
+    <string name="pas_encore_de_compte">Pas encore de compte ?</string>
+    <string name="creer_compte">Créer un compte</string>
 </resources>
