@@ -24,4 +24,5 @@
     <string name="se_deconnecter">Se déconnecter</string>
     <string name="age">Âge</string>
     <string name="niveau_etude">Niveau d\'étude</string>
+    <string name="chargement_cours_impossible">Chargement des cours impossible</string>
 </resources>
