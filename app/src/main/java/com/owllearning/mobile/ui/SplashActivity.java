@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.owllearning.mobile.R;
+import com.owllearning.mobile.utils.SessionManager;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -27,10 +28,14 @@ public class SplashActivity extends AppCompatActivity {
                 .translationY(0f)
                 .setDuration(1500)
                 .withEndAction(() -> {
-                    // vérif du token à mettre
-
-                    Intent intent = new Intent(SplashActivity.this, ConnexionActivity.class);
-                    startActivity(intent);
+                    SessionManager sessionManager = new SessionManager(this);
+                    if (sessionManager.isLoggedIn()) {
+                        Intent intent = new Intent(this, MainActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(this, ConnexionActivity.class);
+                        startActivity(intent);
+                    }
                     finish();
                 });
     }

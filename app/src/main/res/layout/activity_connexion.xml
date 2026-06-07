@@ -80,6 +80,18 @@
         android:paddingEnd="48dp"/>
   </com.google.android.material.textfield.TextInputLayout>
 
+  <TextView
+      android:id="@+id/textView_erreur_connexion"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:textColor="@android:color/holo_red_dark"
+      android:textStyle="bold"
+      android:visibility="gone"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/layout_motdepasse" />
+
   <Button
     android:id="@+id/btn_connexion"
     android:layout_width="wrap_content"
@@ -104,7 +116,7 @@
       app:layout_constraintBottom_toBottomOf="@id/btn_connexion"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@id/btn_connexion" />
+      app:layout_constraintTop_toTopOf="@id/textView_erreur_connexion" />
 
   <View
       android:id="@+id/divider"

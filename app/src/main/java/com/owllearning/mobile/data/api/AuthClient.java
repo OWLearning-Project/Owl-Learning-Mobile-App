@@ -1,17 +1,12 @@
 package com.owllearning.mobile.data.api;
 
-import com.owllearning.mobile.data.model.Request.UtilisateurConnexionRequest;
+import com.owllearning.mobile.data.model.request.UtilisateurConnexionRequest;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
-public class AuthClient {
-    private final AuthApi api;
-
-    public AuthClient() {
-        this.api = ClientApi.getClient().create(AuthApi.class);
-    }
-
-    public AuthApi getApi() { return api; }
+public interface AuthClient {
+    @POST("api/authentification/connexion")
+    Call<String> connexion(@Body UtilisateurConnexionRequest request);
 }
