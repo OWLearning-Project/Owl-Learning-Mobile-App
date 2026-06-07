@@ -90,7 +90,7 @@ public class ConnexionActivity extends AppCompatActivity {
             @NonNull
             @Override
             public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
-                return (T) new ConnexionViewModel(new AuthRepository());
+                return (T) new ConnexionViewModel(new AuthRepository(ConnexionActivity.this));
             }
         };
         viewModel = new ViewModelProvider(this, factory).get(ConnexionViewModel.class);

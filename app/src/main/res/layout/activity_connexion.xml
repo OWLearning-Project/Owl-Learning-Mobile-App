@@ -8,26 +8,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.ConnexionActivity">
 
-  <View
-    android:id="@+id/fond_entete"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:background="@color/marron_owlearning"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent" />
-
-  <ImageView
-      android:id="@+id/logo_app"
-      android:layout_width="50dp"
-      android:layout_height="50dp"
-      android:layout_marginTop="50dp"
-      android:contentDescription="@string/logo_owlearning"
-      app:layout_constraintBottom_toBottomOf="@+id/fond_entete"
-      app:layout_constraintTop_toTopOf="@+id/fond_entete"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/owl_echarpe" />
+  <include
+      android:id="@+id/bandeau"
+      layout="@layout/layout_bandeau"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/titre_connexion"
@@ -40,7 +26,7 @@
       android:textColor="@color/violet_owlearning"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/fond_entete" />
+    app:layout_constraintTop_toBottomOf="@+id/bandeau" />
 
   <EditText
       android:id="@+id/edit_email"

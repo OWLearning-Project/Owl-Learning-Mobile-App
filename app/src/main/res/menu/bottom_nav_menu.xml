@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_mes_cours"
+        android:icon="@drawable/ic_mes_cours"
+        android:title="@string/mes_cours" />
+
+    <item
+        android:id="@+id/nav_catalogue"
+        android:icon="@drawable/ic_catalogue"
+        android:title="@string/catalogue" />
+
+    <item
+        android:id="@+id/nav_messagerie"
+        android:icon="@drawable/ic_messagerie"
+        android:title="@string/messagerie" />
+
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/ic_profil"
+        android:title="@string/profil" />
+</menu>
